@@ -24,7 +24,7 @@ namespace Service.Services {
             if(string.IsNullOrEmpty(name)) {
                 return this.categoryRepository.GetAll().ToList();
             } else {
-                return this.categoryRepository.GetAll().Where(c => c.Name == name));
+                return this.categoryRepository.GetAll().Where(c => c.Name == name);
             }
         }
 
