@@ -9,10 +9,10 @@ namespace Store.Web.App_Start {
 
         public static void RegisterBundles(BundleCollection bundles) {
 
-            bundles.Add(new ScriptBundle("~/bootstrap/js").Include("~/js/bootstrap.js", "~/js/site.js"));
-            bundles.Add(new StyleBundle("~/bootstrap/css").Include("~/css/bootstrap.css", "~/css/site.css"));
+            bundles.Add(new ScriptBundle("~/Content/js").Include("~/Content/js/bootstrap.js", "~/Content/js/custom.js"));
+            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/css/bootstrap.css", "~/Content/css/custom.css"));
 
-            BundleTable.EnableOptimizations = true;
+            BundleTable.EnableOptimizations = false;
         }
     }
 }

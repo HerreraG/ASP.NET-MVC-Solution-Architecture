@@ -27,7 +27,7 @@
                 }
                 <div class="panel-footer">
                     @using (Html.BeginForm("Create", "Home", FormMethod.Post,
-                    new { enctype = "multipart/form-data", @class = "form-inline" })) {
+                new { enctype = "multipart/form-data", @class = "form-horizontal" })) {
                         @Html.Hidden("GadgetCategory", item.CategoryID)
                         <div class="form-group">
                             <label class="sr-only" for="file">File</label>
@@ -45,7 +45,9 @@
                             <label class="sr-only" for="gadgetName">Description</label>
                             <input type="text" class="form-control" name="gadgetDescription" placeholder="Description">
                         </div>
-                        <button type="submit" class="btn btn-primary">Upload</button>
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-primary">Upload</button>
+                        </div>
                     }
                 </div>
             </div>
